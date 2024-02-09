@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exercise</title>
+    <style>
+        .container{
+            background-color: aliceblue;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+
+        .header{
+            background-color: cyan;
+            margin:5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .aside{
+            background-color: greenyellow;
+            padding: 10px;
+            height: 400px;
+        }
+
+        .article{
+            background-color: orange;
+            padding: 10px;
+            margin-left:20px;
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+            height: 400px;
+        }
+
+        .image_article{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .image_article .image1{
+            background-color: yellow;
+            padding: 10px;
+            margin:5px;
+            height: 200px;
+        }
+
+        .footer{
+            background-color: cyan;
+            margin:5px;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="content">
+            <div class="aside">
+                Aside
+            </div>
+            <div class="article">
+                <div class="first_article">
+                    Article
+                </div>
+                <div class="image_article">
+                    <div class="image1">
+                        Image
+                    </div>
+                    <div class="image1">
+                        Image
+                    </div>
+                    <div class="image1">
+                        Image
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
