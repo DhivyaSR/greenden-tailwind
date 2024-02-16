@@ -12,7 +12,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h2 class="text-2xl">GREENDEN</h2>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
           
@@ -31,59 +31,77 @@
         </ul>
     </nav>
 
+    <!-- SideMenu Bar -->
+    <section id="sidemenu_bar" class=" bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-icon" class="cursor-pointer inline">X</p>
+        </div>
+        <ul class="flex gap-10 flex-col items-center text-gray-600">
+            <li>
+                <a href="index.html" class="hover:text-black hover:underline"> Home</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="hover:text-black hover:underline"> Products</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="hover:text-black hover:underline"> Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Product Section -->
 
     <section class="text-center mt-5">
         <h2 class="font-bold text-3xl">Our Products</h2>
-        <input type="text" class="border border-black p-3 w-9/12 mt-5" placeholder="Search for a Product...">
-        <div class="grid grid-cols-2 mt-10 md:grid-cols-4 gap-5">
-            <div>
+        <input id="search" type="text" class="border border-black p-3 w-9/12 mt-5" placeholder="Search for a Product...">
+        <div id="product-container" class="grid grid-cols-2 mt-10 md:grid-cols-4 gap-5">
+            <div class="text-center">
                 <img src="./images/best_seller_1.png" alt="Best Seller Image 1" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Rose Plant</h1>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_2.png" alt="Best Seller Image 2" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Lily Plant</h1>
                 <p>$40</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_3.png" alt="Best Seller Image 3" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Jasmine Plant</h1>
                 <p>$50</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_4.png" alt="Best Seller Image 4" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Sunflower Plant</h1>
                 <p>$60</p>
             </div>
-        </div>
-
-        <div class="grid grid-cols-2 mt-10 md:grid-cols-4 gap-5">
-            <div>
+        
+            <div class="text-center">
                 <img src="./images/best_seller_1.png" alt="Best Seller Image 1" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Snake Plant</h1>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_2.png" alt="Best Seller Image 2" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Daisy Plant</h1>
                 <p>$40</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_3.png" alt="Best Seller Image 3" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Carnation Plant</h1>
                 <p>$50</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/best_seller_4.png" alt="Best Seller Image 4" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <h1>Aster Plant</h1>
                 <p>$60</p>
             </div>
         </div>
@@ -94,7 +112,7 @@
         <h2 class="font-bold text-3xl">Greenden</h2>
         <p class="mt-5">The Standard Chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
         <p class="mt-3">&copy; 2021 Greenday.com</p>
-    </section
-
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

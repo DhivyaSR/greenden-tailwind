@@ -12,7 +12,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h2 class="text-2xl">GREENDEN</h2>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
           
@@ -30,6 +30,26 @@
             </li>
         </ul>
     </nav>
+
+    <!-- SideMenu Bar -->
+    <section id="sidemenu_bar" class=" bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-icon" class="cursor-pointer inline">X</p>
+        </div>
+        <ul class="flex gap-10 flex-col items-center text-gray-600">
+            <li>
+                <a href="index.html" class="hover:text-black hover:underline"> Home</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="hover:text-black hover:underline"> Products</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="hover:text-black hover:underline"> Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!-- Contact Section -->
 
@@ -50,7 +70,7 @@
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                     <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" class="hover:bg-green-100 py-3 px-5 text-sm font-medium text-center text-black border border-black rounded-lg sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-black border border-black rounded-lg sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 hover:bg-green-100">Send message</button>
             </form>
         </div>
     </section>
@@ -60,7 +80,7 @@
         <h2 class="font-bold text-3xl">Greenden</h2>
         <p class="mt-5">The Standard Chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
         <p class="mt-3">&copy; 2021 Greenday.com</p>
-    </section
-
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
